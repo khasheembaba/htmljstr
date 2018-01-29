@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enetre A Value</label><input type="text" id="aval"><br>
+   <label>Entre B Value </label> <input type="text" id="bval">
+
+    <button onclick="doAddtion();">Addtion + </button>
+    <label>Total Value Is</label><input type="text" id="sumval">
+    <script>
+  
+  function doAddtion(){
+     
+      var aVal=Number(document.getElementById('aval').value);
+      var bVal=Number(document.getElementById('bval').value);
+      var addVal=aVal+bVal;
+      document.getElementById('sumval').value=addVal;
+  }
+    function showSum(){
+        var a=30;
+        var b=40;
+        var c=a+b;
+        return c;
+       
+    }
+   
+    showMul=function(){
+        var x=10;
+        var y=30;
+        var sum=x+y;
+        console.log('total',sum);
+    }
+    showMul();
+    
+
+
+    </script>
+</body>
+</html>
